@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  redis-7007:
+    image: redis:6
+    container_name: redis-7007
+    command:
+      ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    volumes:
+      - ./7007/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./7007/data:/data
+    ports:
+      - "7007:7007"
+      - "17007:17007"
+    environment:
+      # 设置时区为上海，否则时间会有问题
+      - TZ=Asia/Shanghai
+    logging:
+      options:
+        max-size: '100m'
+        max-file: '10'
+  redis-7008:
+    container_name: redis-7008
+      - ./7008/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./7008/data:/data
+      - "7008:7008"
+      - "17008:17008"
+networks:
+    default:
+        external:
+            name: learn_shop
