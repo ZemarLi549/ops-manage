@@ -151,3 +151,13 @@ curl --location 'http://127.0.0.1:8000/ops-manage/v1/api/alarm/alert' \
 
 6. 维护alarm系统，删除历史告警指纹等，mysql和es中的历史数据，保证系统长期快速运行
 删除脚本参考./scripts/ops-alarm_historydel.py
+
+****
+
+
+**后续**
+有什么二次开发啥的可以联系本人：v:aiwansheadmin
+后续会迭代开发gin+vue3 的基于k8s+jenkins+harbor的发布系统，包含构建，代码检测，灰度发布，金丝雀布回退等操作，全力助力云原生！！！
+
+## License
+Everything is [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
