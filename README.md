@@ -1,5 +1,5 @@
 
-## 基于Django + Vue3 + Antdesing UI前后端分离的告警系统和日志系统
+## 基于Django + Vue3 + ant-design UI前后端分离的告警系统和日志系统
 > 整个项目采用了mysql,redis,es做中间件，celey做任务异步，权限等都有涉及缓存，高并发锁，apschedule定时清理，guncicorn启动
 
 运维管理系统 Demo 地址: http://demo.zengxin.cn
